@@ -1,21 +1,6 @@
 {
   "productos": [
     {
-      "nombre": "Goldy Roger",
-      "precio": 1000000,
-      "foto": "/img/productos/images.webp",
-      "descripcion": "se vender perros xd\n\n1\n12\n123",
-      "incluye": [
-        "un heladios xd"
-      ],
-      "categorias": [
-        "mini"
-      ],
-      "etiqueta": "Boningo",
-      "agotado": false,
-      "visible": true
-    },
-    {
       "nombre": "Ramo gigante 60 rosas + Stitch",
       "precio": 62990,
       "foto": "img/productos/stitch-60.jpg",
@@ -31,6 +16,21 @@
         "peluche"
       ],
       "etiqueta": "Gigante",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Goldy Roger",
+      "precio": 1000000,
+      "foto": "/img/productos/images.webp",
+      "descripcion": "se vender perros xd\n\n1\n12\n123",
+      "incluye": [
+        "un heladios xd"
+      ],
+      "categorias": [
+        "mini"
+      ],
+      "etiqueta": "Boningo",
       "agotado": false,
       "visible": true
     },
