@@ -1,0 +1,112 @@
+# Configuración del panel /admin (Sveltia CMS)
+# Cada cambio que se guarda aquí crea un commit en GitHub y la web se actualiza sola.
+
+backend:
+  name: github
+  repo: Bemol69/TiendaDeolivia_sorpresas
+  branch: main
+  commit_messages:
+    update: "Catálogo: actualiza productos"
+    uploadMedia: "Catálogo: sube foto {{path}}"
+    deleteMedia: "Catálogo: elimina foto {{path}}"
+
+site_url: https://bemol69.github.io/TiendaDeolivia_sorpresas/
+display_url: https://bemol69.github.io/TiendaDeolivia_sorpresas/
+logo_url: ../img/logo.jpg
+
+media_folder: img/productos
+public_folder: /img/productos
+
+# Las fotos del celular se achican y convierten a WebP al subirlas, para que la web cargue rápido
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1200
+          height: 1200
+
+collections:
+  - name: catalogo
+    label: Catálogo
+    icon: local_florist
+    files:
+      - name: productos
+        label: Productos
+        file: data/productos.json
+        format: json
+        fields:
+          - name: productos
+            label: Productos
+            label_singular: producto
+            widget: list
+            collapsed: true
+            add_to_top: true
+            summary: "{{fields.nombre}} · ${{fields.precio}}"
+            hint: "El orden de esta lista es el orden en que aparecen en la web. Arrastra para reordenar."
+            fields:
+              - name: nombre
+                label: Nombre del ramo
+                widget: string
+
+              - name: precio
+                label: Precio
+                widget: number
+                value_type: int
+                min: 0
+                hint: "Solo números, sin puntos ni signo $. Ej: 25990"
+
+              - name: foto
+                label: Foto
+                widget: image
+                hint: "Ideal una foto vertical del ramo."
+
+              - name: descripcion
+                label: Descripción
+                widget: text
+                required: false
+                hint: "Opcional. Una frase corta que aparece bajo el nombre."
+
+              - name: incluye
+                label: Qué incluye
+                label_singular: ítem
+                widget: list
+                field:
+                  name: item
+                  label: Ítem
+                  widget: string
+                hint: "Un ítem por línea. Ej: 22 rosas, Chocolates, Mariposas."
+
+              - name: categorias
+                label: Categorías (filtros del catálogo)
+                widget: select
+                multiple: true
+                min: 1
+                options:
+                  - { label: "Rosas aromáticas", value: aromaticas }
+                  - { label: "Rosas de jabón", value: jabon }
+                  - { label: "Rosas eternas", value: eternas }
+                  - { label: "Con peluche", value: peluche }
+                  - { label: "Girasoles", value: girasoles }
+                  - { label: "Cajas corazón", value: cajas }
+                  - { label: "Mini ramos", value: mini }
+
+              - name: etiqueta
+                label: Etiqueta
+                widget: string
+                required: false
+                hint: "Opcional. Aparece sobre la foto. Ej: Nuevo, Más vendido."
+
+              - name: agotado
+                label: Agotado
+                widget: boolean
+                default: false
+                hint: "Si está activado, se muestra 'Consultar stock' en vez de 'Hacer pedido'."
+
+              - name: visible
+                label: Mostrar en la web
+                widget: boolean
+                default: true
+                hint: "Desactívalo para ocultar el producto sin borrarlo."

@@ -126,6 +126,10 @@ h2 { font-family: var(--font-script); font-size: clamp(2.3rem, 5vw, 3.2rem); col
 .badge { position: absolute; top: 12px; left: 12px; background: var(--lilac); color: var(--white); font-size: .75rem; font-weight: 700; padding: .25rem .75rem; border-radius: 999px; }
 .card__body { padding: 1.1rem 1.25rem 1.3rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
 .card__body h3 { font-size: 1.08rem; }
+.card__desc { font-size: .9rem; color: var(--plum-soft); }
+.badge--soldout { background: var(--plum); }
+.card.is-soldout .card__img img { filter: grayscale(.6); opacity: .75; }
+.card.is-soldout .price { color: var(--plum-soft); }
 .card__body ul { list-style: none; font-size: .88rem; color: var(--plum-soft); flex: 1; }
 .card__body li::before { content: '♥ '; color: var(--pink); font-size: .75em; }
 .card__foot { display: flex; align-items: center; justify-content: space-between; margin-top: .6rem; gap: .5rem; }

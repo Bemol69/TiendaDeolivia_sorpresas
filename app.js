@@ -11,91 +11,9 @@ const ENTREGAS = {
   region: 'Envío a región',
 };
 
-// tags: aromaticas | jabon | eternas | peluche | girasoles | cajas | mini
-const PRODUCTS = [
-  { id: 'stitch-60', name: 'Ramo gigante 60 rosas + Stitch', price: 62990, tags: ['jabon', 'peluche'], badge: 'Gigante',
-    items: ['60 rosas de jabón', 'Peluche Stitch 25 cm', 'Mariposas', 'Dedicatoria (tarjeta y cinta)'] },
-  { id: 'jabon-30', name: 'Ramo 30 rosas corona deluxe', price: 34990, tags: ['jabon'], badge: 'Graduación',
-    items: ['30 rosas de jabón', 'Corona deluxe', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-
-  { id: 'aromaticas-22', name: 'Ramo rosas aromáticas x22', price: 25990, tags: ['aromaticas'], badge: 'Favorito',
-    items: ['22 rosas color a elección', 'Chocolates', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'aromaticas-13', name: 'Ramo rosas aromáticas x13', price: 18990, tags: ['aromaticas'],
-    items: ['13 rosas', 'Chocolates', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'aromaticas-8', name: 'Ramo rosas aromáticas x8', price: 12990, tags: ['aromaticas'],
-    items: ['8 rosas', 'Chocolates', 'Mariposas', 'Dedicatoria'] },
-
-  { id: 'stitch', name: 'Ramo rosas y peluche Stitch', price: 24990, tags: ['peluche', 'aromaticas'], badge: 'Rosado o azul',
-    items: ['8 rosas aromáticas', 'Peluche Stitch 20 cm', 'Chocolates Valentte o Bon o Bon', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-  { id: 'angela', name: 'Ramo rosas y peluche Angela', price: 25990, tags: ['peluche'],
-    items: ['Peluche Angela 20 cm', '11 rosas', 'Chocolates Valentte', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-  { id: 'jabon-22-kitty', name: '22 rosas de jabón + Hello Kitty', price: 37990, tags: ['peluche', 'jabon'], badge: 'Premium',
-    items: ['22 rosas', 'Peluche Hello Kitty (o a elección)', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'eternas-kitty', name: 'Ramo rosas eternas Kitty', price: 27990, tags: ['peluche', 'eternas'],
-    items: ['7 rosas eternas', 'Peluche Hello Kitty 25 cm', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'eternas-peluche', name: 'Rosas eternas con osito', price: 22990, tags: ['peluche', 'eternas'],
-    items: ['7 rosas eternas', 'Tiara', 'Osito de peluche 25 cm', 'Caja love', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'kitty-angel', name: 'Ramo Hello Kitty', price: 18990, tags: ['peluche'],
-    items: ['Peluche Hello Kitty', 'Rosas', 'Mariposas', 'Dedicatoria'] },
-  { id: 'kitty-18', name: '18 rosas de jabón + Hello Kitty', price: 31990, tags: ['peluche', 'jabon'],
-    items: ['18 rosas de jabón', '1 rosa eterna', 'Peluche Hello Kitty 25 cm', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'kitty-collar', name: 'Ramo Hello Kitty con collar', price: 26990, tags: ['peluche', 'jabon'],
-    items: ['8 rosas de jabón', 'Peluche Hello Kitty 25 cm', 'Collar Hello Kitty', 'Mariposas', 'Tul perlado'] },
-  { id: 'minnie', name: '22 rosas de jabón + Minnie', price: 30990, tags: ['peluche', 'jabon'],
-    items: ['22 rosas de jabón', 'Peluche Minnie', 'Chocolate', 'Mariposas', 'Corona', 'Globo', 'Dedicatoria (tarjeta)'] },
-  { id: 'angela-25', name: 'Ramo rosas de jabón + Angela', price: 24990, tags: ['peluche', 'jabon'],
-    items: ['10 rosas de jabón', 'Peluche Angela 25 cm', 'Chocolate', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'peluche-dulces', name: 'Ramo peluche y dulces', price: 24990, tags: ['peluche', 'jabon'],
-    items: ['8 rosas de jabón', '2 dulces a elección', 'Peluche de 25 cm', 'Dedicatoria (tarjeta)'] },
-  { id: 'stitch-llaveros', name: 'Rosas eternas + Stitch y Angela', price: 17990, tags: ['peluche', 'eternas'],
-    items: ['5 rosas eternas', '2 peluches llaveros Stitch', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-
-  { id: 'caja-kitty', name: 'Caja corazón Hello Kitty', price: 27990, tags: ['cajas', 'peluche'], badge: 'Te amo',
-    items: ['11 rosas de jabón', 'Caja corazón', 'Caja de chocolates', 'Peluche Kitty 25 cm con tiara', 'Globo "Te amo"', 'Dedicatoria (tarjeta con fotos)'] },
-  { id: 'caja-capibara', name: 'Caja corazón capibara', price: 17990, tags: ['cajas', 'eternas', 'peluche'],
-    items: ['4 rosas eternas', 'Caja corazón', 'Capibara llavero', 'Globo', '3 chocolates en acrílico', 'Dedicatoria (tarjeta)'] },
-
-  { id: 'girasoles-7', name: 'Ramo girasoles y rosas', price: 23990, tags: ['girasoles', 'jabon'],
-    items: ['10 rosas de jabón', '7 girasoles', 'Chocolate', 'Mariposas', 'Globo', 'Dedicatoria (tarjeta)'] },
-  { id: 'girasoles-3', name: 'Ramo rosas con 3 girasoles', price: 16990, tags: ['girasoles', 'jabon'],
-    items: ['15 rosas de jabón', '3 girasoles', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-
-  { id: 'futbolero', name: 'Ramo futbolero', price: 16990, tags: ['jabon'], badge: 'Tu equipo',
-    items: ['10 rosas de jabón', 'Chocolate', 'Mariposas', 'Chuchito y pelotas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-
-  { id: 'jabon-22-rosa', name: 'Ramo rosas de jabón x22', price: 25990, tags: ['jabon'],
-    items: ['22 rosas de jabón', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'jabon-22-rojo', name: 'Ramo rosas de jabón x22 rojas', price: 24990, tags: ['jabon'],
-    items: ['22 rosas de jabón', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'jabon-13-mediano', name: 'Ramo rosas de jabón mediano', price: 18990, tags: ['jabon'],
-    items: ['13 rosas', '1 rosa eterna', '4 chocolates en acrílicos', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'jabon-12-chocolate', name: 'Ramo 12 rosas con chocolates', price: 18990, tags: ['jabon'],
-    items: ['12 rosas de jabón', 'Chocolates', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-  { id: 'jabon-15-eterna', name: 'Ramo 15 rosas + rosa eterna', price: 15990, tags: ['jabon', 'eternas'],
-    items: ['15 rosas de jabón', '1 rosa eterna', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'jabon-13-tiara', name: 'Ramo 13 rosas con tiara', price: 14990, tags: ['jabon'],
-    items: ['13 rosas de jabón', 'Chocolate', 'Mariposas', 'Tiara', 'Dedicatoria (tarjeta y cinta)'] },
-  { id: 'jabon-10', name: 'Ramo rosas de jabón x10', price: 12990, tags: ['jabon'],
-    items: ['10 rosas de jabón (colores a elección)', 'Mariposas', 'Chocolate', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'jabon-8-chocolates', name: 'Ramo 8 rosas con chocolates', price: 12990, tags: ['jabon'],
-    items: ['8 rosas de jabón', '3 chocolates en acrílicos', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta)'] },
-  { id: 'jabon-12', name: 'Ramo rosas de jabón x12', price: 9990, tags: ['jabon'], badge: 'Económico',
-    items: ['12 rosas', 'Mariposas', 'Dedicatoria (tarjeta o cinta)'] },
-
-  { id: 'eternas-10', name: 'Ramo rosas eternas x10', price: 17990, tags: ['eternas'],
-    items: ['10 rosas eternas', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-  { id: 'eternas-8', name: 'Ramo rosas eternas x8', price: 15990, tags: ['eternas'],
-    items: ['8 rosas eternas', 'Mariposas', 'Corona', 'Dedicatoria (tarjeta o cinta)'] },
-  { id: 'eternas-7', name: 'Ramo rosas eternas x7', price: 12990, tags: ['eternas'],
-    items: ['7 rosas eternas', 'Mariposas', 'Tiara', 'Dedicatoria (tarjeta o cinta)'] },
-
-  { id: 'mini-kuromi', name: 'Mini ramo Kuromi', price: 13000, tags: ['mini', 'peluche'],
-    items: ['4 rosas de jabón', '2 chocolates en acrílicos', 'Peluche llavero Kuromi', 'Mariposa', 'Tul perlado', 'Dedicatoria (tarjeta)'] },
-  { id: 'mini-kitty', name: 'Mini ramo Hello Kitty', price: 12000, tags: ['mini', 'peluche'],
-    items: ['5 rosas de jabón', 'Peluche llavero Hello Kitty', 'Mariposa', 'Tul perlado', 'Dedicatoria (tarjeta)'] },
-  { id: 'mini-3', name: 'Mini ramo 3 rosas', price: 4990, tags: ['mini', 'jabon'], badge: 'Desde $4.990',
-    items: ['3 rosas de jabón', '2 chocolates', 'Mariposas', 'Dedicatoria (tarjeta)'] },
-];
+// Los productos se editan desde el panel /admin y se guardan en data/productos.json
+// categorias: aromaticas | jabon | eternas | peluche | girasoles | cajas | mini
+let PRODUCTS = [];
 
 const CUSTOM = { id: 'personalizado', name: 'Ramo 100% personalizado', price: 0 };
 
@@ -122,7 +40,7 @@ const EXTRAS = ['🧸 Peluche', '🎈 Globos', '🍫 Chocolates Valentte', '🍫
 // ===== UTILIDADES =====
 const clp = (n) => '$' + n.toLocaleString('es-CL');
 const $ = (s) => document.querySelector(s);
-const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const findProduct = (id) => (id === CUSTOM.id ? CUSTOM : PRODUCTS.find((p) => p.id === id));
 // Se usa api.whatsapp.com y no wa.me: la redirección de wa.me rompe los emojis (llegan como �)
 const waUrl = (text) =>
@@ -152,6 +70,7 @@ const filters = $('#filters');
 function renderFilters(active) {
   const count = (k) => (k === 'todos' ? PRODUCTS.length : PRODUCTS.filter((p) => p.tags.includes(k)).length);
   filters.innerHTML = FILTERS
+    .filter(([k]) => count(k) > 0) // oculta categorías vacías
     .map(([k, label]) => `<button class="tab ${k === active ? 'is-active' : ''}" role="tab" aria-selected="${k === active}" data-cat="${k}">${label}<span class="tab__n">${count(k)}</span></button>`)
     .join('');
 }
@@ -165,17 +84,20 @@ function renderProducts(cat = currentCat) {
   if (sort) list = [...list].sort(sort);
   $('#count').innerHTML = `Mostrando <strong>${list.length}</strong> ${list.length === 1 ? 'ramo' : 'ramos'}`;
   grid.innerHTML = list.map((p) => `
-    <article class="card">
+    <article class="card${p.agotado ? ' is-soldout' : ''}">
       <div class="card__img">
-        ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
-        <img src="img/${p.id}.jpg" alt="${p.name}" loading="lazy">
+        ${p.agotado ? '<span class="badge badge--soldout">Agotado</span>' : p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}
+        <img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">
       </div>
       <div class="card__body">
-        <h3>${p.name}</h3>
-        <ul>${p.items.map((i) => `<li>${i}</li>`).join('')}</ul>
+        <h3>${esc(p.name)}</h3>
+        ${p.desc ? `<p class="card__desc">${esc(p.desc)}</p>` : ''}
+        <ul>${p.items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
         <div class="card__foot">
           <span class="price">${clp(p.price)}</span>
-          <button class="btn btn--primary btn--sm" data-order="${p.id}">Hacer pedido</button>
+          ${p.agotado
+            ? `<a class="btn btn--ghost btn--sm" target="_blank" rel="noopener" href="${esc(waUrl(`Hola! ¿Tienen stock de ${p.name}? 🌸`))}">Consultar stock</a>`
+            : `<button class="btn btn--primary btn--sm" data-order="${p.id}">Hacer pedido</button>`}
         </div>
       </div>
     </article>`).join('');
@@ -197,9 +119,12 @@ const fFecha = $('#fFecha');
 const fPago = $('#fPago');
 let orderNumber = nextOrderNumber();
 
-fRamo.innerHTML =
-  `<option value="${CUSTOM.id}">✨ ${CUSTOM.name} (a cotizar)</option>` +
-  PRODUCTS.map((p) => `<option value="${p.id}">${p.name} (${clp(p.price)})</option>`).join('');
+function renderRamoOptions() {
+  fRamo.innerHTML =
+    `<option value="${CUSTOM.id}">✨ ${CUSTOM.name} (a cotizar)</option>` +
+    PRODUCTS.filter((p) => !p.agotado)
+      .map((p) => `<option value="${p.id}">${esc(p.name)} (${clp(p.price)})</option>`).join('');
+}
 
 $('#fExtras').innerHTML = EXTRAS
   .map((x) => `<label><input type="checkbox" value="${x}"><span>${x}</span></label>`)
@@ -344,5 +269,35 @@ $('#contactWaBtn').href = waUrl();
   el.className = 'status ' + (open ? 'is-open' : 'is-closed');
 })();
 
-renderFilters('todos');
-renderProducts('todos');
+// ===== CARGA DE PRODUCTOS =====
+const slug = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+async function loadProducts() {
+  try {
+    const res = await fetch('data/productos.json', { cache: 'no-cache' });
+    const data = await res.json();
+    PRODUCTS = (data.productos || [])
+      .filter((p) => p.visible !== false && p.nombre)
+      .map((p, i) => ({
+        id: `${slug(p.nombre)}-${i}`,
+        name: p.nombre,
+        price: Number(p.precio) || 0,
+        // el CMS guarda "/img/productos/x.jpg"; sin la barra inicial funciona también en GitHub Pages
+        img: (p.foto || 'img/logo.jpg').replace(/^\//, ''),
+        desc: p.descripcion || '',
+        items: Array.isArray(p.incluye) ? p.incluye.filter(Boolean) : [],
+        tags: Array.isArray(p.categorias) ? p.categorias : [],
+        badge: p.etiqueta || '',
+        agotado: !!p.agotado,
+      }));
+  } catch (e) {
+    console.error(e);
+    grid.innerHTML = '<p class="muted">No se pudo cargar el catálogo. Intenta recargar la página.</p>';
+  }
+  renderFilters('todos');
+  renderProducts('todos');
+  renderRamoOptions();
+}
+
+loadProducts();

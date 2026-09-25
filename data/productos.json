@@ -1,0 +1,714 @@
+{
+  "productos": [
+    {
+      "nombre": "Ramo gigante 60 rosas + Stitch",
+      "precio": 62990,
+      "foto": "img/productos/stitch-60.jpg",
+      "descripcion": "",
+      "incluye": [
+        "60 rosas de jabón",
+        "Peluche Stitch 25 cm",
+        "Mariposas",
+        "Dedicatoria (tarjeta y cinta)"
+      ],
+      "categorias": [
+        "jabon",
+        "peluche"
+      ],
+      "etiqueta": "Gigante",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo 30 rosas corona deluxe",
+      "precio": 34990,
+      "foto": "img/productos/jabon-30.jpg",
+      "descripcion": "",
+      "incluye": [
+        "30 rosas de jabón",
+        "Corona deluxe",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "Graduación",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas aromáticas x22",
+      "precio": 25990,
+      "foto": "img/productos/aromaticas-22.jpg",
+      "descripcion": "",
+      "incluye": [
+        "22 rosas color a elección",
+        "Chocolates",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "aromaticas"
+      ],
+      "etiqueta": "Favorito",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas aromáticas x13",
+      "precio": 18990,
+      "foto": "img/productos/aromaticas-13.jpg",
+      "descripcion": "",
+      "incluye": [
+        "13 rosas",
+        "Chocolates",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "aromaticas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas aromáticas x8",
+      "precio": 12990,
+      "foto": "img/productos/aromaticas-8.jpg",
+      "descripcion": "",
+      "incluye": [
+        "8 rosas",
+        "Chocolates",
+        "Mariposas",
+        "Dedicatoria"
+      ],
+      "categorias": [
+        "aromaticas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas y peluche Stitch",
+      "precio": 24990,
+      "foto": "img/productos/stitch.jpg",
+      "descripcion": "",
+      "incluye": [
+        "8 rosas aromáticas",
+        "Peluche Stitch 20 cm",
+        "Chocolates Valentte o Bon o Bon",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "peluche",
+        "aromaticas"
+      ],
+      "etiqueta": "Rosado o azul",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas y peluche Angela",
+      "precio": 25990,
+      "foto": "img/productos/angela.jpg",
+      "descripcion": "",
+      "incluye": [
+        "Peluche Angela 20 cm",
+        "11 rosas",
+        "Chocolates Valentte",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "peluche"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "22 rosas de jabón + Hello Kitty",
+      "precio": 37990,
+      "foto": "img/productos/jabon-22-kitty.jpg",
+      "descripcion": "",
+      "incluye": [
+        "22 rosas",
+        "Peluche Hello Kitty (o a elección)",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "peluche",
+        "jabon"
+      ],
+      "etiqueta": "Premium",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas eternas Kitty",
+      "precio": 27990,
+      "foto": "img/productos/eternas-kitty.jpg",
+      "descripcion": "",
+      "incluye": [
+        "7 rosas eternas",
+        "Peluche Hello Kitty 25 cm",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "peluche",
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Rosas eternas con osito",
+      "precio": 22990,
+      "foto": "img/productos/eternas-peluche.jpg",
+      "descripcion": "",
+      "incluye": [
+        "7 rosas eternas",
+        "Tiara",
+        "Osito de peluche 25 cm",
+        "Caja love",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "peluche",
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo Hello Kitty",
+      "precio": 18990,
+      "foto": "img/productos/kitty-angel.jpg",
+      "descripcion": "",
+      "incluye": [
+        "Peluche Hello Kitty",
+        "Rosas",
+        "Mariposas",
+        "Dedicatoria"
+      ],
+      "categorias": [
+        "peluche"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "18 rosas de jabón + Hello Kitty",
+      "precio": 31990,
+      "foto": "img/productos/kitty-18.jpg",
+      "descripcion": "",
+      "incluye": [
+        "18 rosas de jabón",
+        "1 rosa eterna",
+        "Peluche Hello Kitty 25 cm",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "peluche",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo Hello Kitty con collar",
+      "precio": 26990,
+      "foto": "img/productos/kitty-collar.jpg",
+      "descripcion": "",
+      "incluye": [
+        "8 rosas de jabón",
+        "Peluche Hello Kitty 25 cm",
+        "Collar Hello Kitty",
+        "Mariposas",
+        "Tul perlado"
+      ],
+      "categorias": [
+        "peluche",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "22 rosas de jabón + Minnie",
+      "precio": 30990,
+      "foto": "img/productos/minnie.jpg",
+      "descripcion": "",
+      "incluye": [
+        "22 rosas de jabón",
+        "Peluche Minnie",
+        "Chocolate",
+        "Mariposas",
+        "Corona",
+        "Globo",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "peluche",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas de jabón + Angela",
+      "precio": 24990,
+      "foto": "img/productos/angela-25.jpg",
+      "descripcion": "",
+      "incluye": [
+        "10 rosas de jabón",
+        "Peluche Angela 25 cm",
+        "Chocolate",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "peluche",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo peluche y dulces",
+      "precio": 24990,
+      "foto": "img/productos/peluche-dulces.jpg",
+      "descripcion": "",
+      "incluye": [
+        "8 rosas de jabón",
+        "2 dulces a elección",
+        "Peluche de 25 cm",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "peluche",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Rosas eternas + Stitch y Angela",
+      "precio": 17990,
+      "foto": "img/productos/stitch-llaveros.jpg",
+      "descripcion": "",
+      "incluye": [
+        "5 rosas eternas",
+        "2 peluches llaveros Stitch",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "peluche",
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Caja corazón Hello Kitty",
+      "precio": 27990,
+      "foto": "img/productos/caja-kitty.jpg",
+      "descripcion": "",
+      "incluye": [
+        "11 rosas de jabón",
+        "Caja corazón",
+        "Caja de chocolates",
+        "Peluche Kitty 25 cm con tiara",
+        "Globo \"Te amo\"",
+        "Dedicatoria (tarjeta con fotos)"
+      ],
+      "categorias": [
+        "cajas",
+        "peluche"
+      ],
+      "etiqueta": "Te amo",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Caja corazón capibara",
+      "precio": 17990,
+      "foto": "img/productos/caja-capibara.jpg",
+      "descripcion": "",
+      "incluye": [
+        "4 rosas eternas",
+        "Caja corazón",
+        "Capibara llavero",
+        "Globo",
+        "3 chocolates en acrílico",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "cajas",
+        "eternas",
+        "peluche"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo girasoles y rosas",
+      "precio": 23990,
+      "foto": "img/productos/girasoles-7.jpg",
+      "descripcion": "",
+      "incluye": [
+        "10 rosas de jabón",
+        "7 girasoles",
+        "Chocolate",
+        "Mariposas",
+        "Globo",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "girasoles",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas con 3 girasoles",
+      "precio": 16990,
+      "foto": "img/productos/girasoles-3.jpg",
+      "descripcion": "",
+      "incluye": [
+        "15 rosas de jabón",
+        "3 girasoles",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "girasoles",
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo futbolero",
+      "precio": 16990,
+      "foto": "img/productos/futbolero.jpg",
+      "descripcion": "",
+      "incluye": [
+        "10 rosas de jabón",
+        "Chocolate",
+        "Mariposas",
+        "Chuchito y pelotas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "Tu equipo",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas de jabón x22",
+      "precio": 25990,
+      "foto": "img/productos/jabon-22-rosa.jpg",
+      "descripcion": "",
+      "incluye": [
+        "22 rosas de jabón",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas de jabón x22 rojas",
+      "precio": 24990,
+      "foto": "img/productos/jabon-22-rojo.jpg",
+      "descripcion": "",
+      "incluye": [
+        "22 rosas de jabón",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas de jabón mediano",
+      "precio": 18990,
+      "foto": "img/productos/jabon-13-mediano.jpg",
+      "descripcion": "",
+      "incluye": [
+        "13 rosas",
+        "1 rosa eterna",
+        "4 chocolates en acrílicos",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo 12 rosas con chocolates",
+      "precio": 18990,
+      "foto": "img/productos/jabon-12-chocolate.jpg",
+      "descripcion": "",
+      "incluye": [
+        "12 rosas de jabón",
+        "Chocolates",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo 15 rosas + rosa eterna",
+      "precio": 15990,
+      "foto": "img/productos/jabon-15-eterna.jpg",
+      "descripcion": "",
+      "incluye": [
+        "15 rosas de jabón",
+        "1 rosa eterna",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon",
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo 13 rosas con tiara",
+      "precio": 14990,
+      "foto": "img/productos/jabon-13-tiara.jpg",
+      "descripcion": "",
+      "incluye": [
+        "13 rosas de jabón",
+        "Chocolate",
+        "Mariposas",
+        "Tiara",
+        "Dedicatoria (tarjeta y cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas de jabón x10",
+      "precio": 12990,
+      "foto": "img/productos/jabon-10.jpg",
+      "descripcion": "",
+      "incluye": [
+        "10 rosas de jabón (colores a elección)",
+        "Mariposas",
+        "Chocolate",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo 8 rosas con chocolates",
+      "precio": 12990,
+      "foto": "img/productos/jabon-8-chocolates.jpg",
+      "descripcion": "",
+      "incluye": [
+        "8 rosas de jabón",
+        "3 chocolates en acrílicos",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas de jabón x12",
+      "precio": 9990,
+      "foto": "img/productos/jabon-12.jpg",
+      "descripcion": "",
+      "incluye": [
+        "12 rosas",
+        "Mariposas",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "jabon"
+      ],
+      "etiqueta": "Económico",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas eternas x10",
+      "precio": 17990,
+      "foto": "img/productos/eternas-10.jpg",
+      "descripcion": "",
+      "incluye": [
+        "10 rosas eternas",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas eternas x8",
+      "precio": 15990,
+      "foto": "img/productos/eternas-8.jpg",
+      "descripcion": "",
+      "incluye": [
+        "8 rosas eternas",
+        "Mariposas",
+        "Corona",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Ramo rosas eternas x7",
+      "precio": 12990,
+      "foto": "img/productos/eternas-7.jpg",
+      "descripcion": "",
+      "incluye": [
+        "7 rosas eternas",
+        "Mariposas",
+        "Tiara",
+        "Dedicatoria (tarjeta o cinta)"
+      ],
+      "categorias": [
+        "eternas"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Mini ramo Kuromi",
+      "precio": 13000,
+      "foto": "img/productos/mini-kuromi.jpg",
+      "descripcion": "",
+      "incluye": [
+        "4 rosas de jabón",
+        "2 chocolates en acrílicos",
+        "Peluche llavero Kuromi",
+        "Mariposa",
+        "Tul perlado",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "mini",
+        "peluche"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Mini ramo Hello Kitty",
+      "precio": 12000,
+      "foto": "img/productos/mini-kitty.jpg",
+      "descripcion": "",
+      "incluye": [
+        "5 rosas de jabón",
+        "Peluche llavero Hello Kitty",
+        "Mariposa",
+        "Tul perlado",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "mini",
+        "peluche"
+      ],
+      "etiqueta": "",
+      "agotado": false,
+      "visible": true
+    },
+    {
+      "nombre": "Mini ramo 3 rosas",
+      "precio": 4990,
+      "foto": "img/productos/mini-3.jpg",
+      "descripcion": "",
+      "incluye": [
+        "3 rosas de jabón",
+        "2 chocolates",
+        "Mariposas",
+        "Dedicatoria (tarjeta)"
+      ],
+      "categorias": [
+        "mini",
+        "jabon"
+      ],
+      "etiqueta": "Desde $4.990",
+      "agotado": false,
+      "visible": true
+    }
+  ]
+}
