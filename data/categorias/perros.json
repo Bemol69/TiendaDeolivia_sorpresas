@@ -1,0 +1,9 @@
+{
+  "nombre": "Perros",
+  "productos": [
+    "goldy-roger",
+    "perro-ingles"
+  ],
+  "orden": 100,
+  "visible": true
+}
