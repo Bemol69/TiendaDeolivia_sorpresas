@@ -12,7 +12,7 @@ const ENTREGAS = {
 };
 
 // Productos y categorías se editan desde el panel /admin (data/productos, data/categorias)
-// y se publican juntos en data/catalogo.json (lo genera scripts/build-catalogo.mjs)
+// y se publican juntos en data/catalogo.json (lo genera scripts/build.mjs)
 let PRODUCTS = [];
 let FILTERS = [['todos', 'Todos']];
 

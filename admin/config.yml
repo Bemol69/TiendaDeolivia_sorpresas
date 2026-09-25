@@ -1,6 +1,6 @@
 # Configuración del panel /admin (Sveltia CMS)
-# Cada cambio que se guarda aquí crea un commit en GitHub. GitHub Actions arma
-# data/catalogo.json (scripts/build-catalogo.mjs) y publica la web en ~1 minuto.
+# Cada cambio que se guarda aquí crea un commit en GitHub.
+# Vercel arma la web (scripts/build.mjs) y la publica en ~30 segundos.
 
 backend:
   name: github
@@ -13,8 +13,8 @@ backend:
     uploadMedia: "Catálogo: sube foto {{path}}"
     deleteMedia: "Catálogo: elimina foto {{path}}"
 
-site_url: https://bemol69.github.io/TiendaDeolivia_sorpresas/
-display_url: https://bemol69.github.io/TiendaDeolivia_sorpresas/
+site_url: https://olivia-sorpresas.vercel.app/
+display_url: https://olivia-sorpresas.vercel.app/
 logo_url: ../img/logo.jpg
 
 media_folder: img/productos
