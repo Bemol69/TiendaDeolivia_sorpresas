@@ -1,9 +1,6 @@
 {
   "nombre": "Perros",
-  "productos": [
-    "perro-ingles",
-    "perro-feo"
-  ],
+  "productos": [],
   "orden": 100,
   "visible": true
 }
