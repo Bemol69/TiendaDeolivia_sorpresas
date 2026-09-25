@@ -1,11 +1,10 @@
 {
   "nombre": "Mini ramos",
-  "orden": 70,
-  "visible": true,
   "productos": [
-    "goldy-roger",
     "mini-ramo-kuromi",
     "mini-ramo-hello-kitty",
     "mini-ramo-3-rosas"
-  ]
+  ],
+  "orden": 70,
+  "visible": true
 }
