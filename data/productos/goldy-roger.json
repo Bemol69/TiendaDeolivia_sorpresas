@@ -7,7 +7,7 @@
     "un heladios xd"
   ],
   "etiqueta": "Boningo",
-  "agotado": false,
-  "visible": true,
-  "orden": 20
+  "orden": 20,
+  "agotado": true,
+  "visible": true
 }
