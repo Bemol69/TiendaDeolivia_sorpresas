@@ -2,7 +2,8 @@
   "nombre": "Perros",
   "productos": [
     "goldy-roger",
-    "perro-ingles"
+    "perro-ingles",
+    "perro-feo"
   ],
   "orden": 100,
   "visible": true
