@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo peluche y dulces",
+  "precio": 24990,
+  "foto": "/img/productos/peluche-dulces.jpg",
+  "descripcion": "",
+  "incluye": [
+    "8 rosas de jabón",
+    "2 dulces a elección",
+    "Peluche de 25 cm",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 170
+}

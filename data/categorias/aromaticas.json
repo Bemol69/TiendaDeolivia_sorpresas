@@ -1,0 +1,11 @@
+{
+  "nombre": "Rosas aromáticas",
+  "orden": 10,
+  "visible": true,
+  "productos": [
+    "ramo-rosas-aromaticas-x22",
+    "ramo-rosas-aromaticas-x13",
+    "ramo-rosas-aromaticas-x8",
+    "ramo-rosas-y-peluche-stitch"
+  ]
+}

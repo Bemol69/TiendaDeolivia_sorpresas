@@ -11,22 +11,12 @@ const ENTREGAS = {
   region: 'Envío a región',
 };
 
-// Los productos se editan desde el panel /admin y se guardan en data/productos.json
-// categorias: aromaticas | jabon | eternas | peluche | girasoles | cajas | mini
+// Productos y categorías se editan desde el panel /admin (data/productos, data/categorias)
+// y se publican juntos en data/catalogo.json (lo genera scripts/build-catalogo.mjs)
 let PRODUCTS = [];
+let FILTERS = [['todos', 'Todos']];
 
 const CUSTOM = { id: 'personalizado', name: 'Ramo 100% personalizado', price: 0 };
-
-const FILTERS = [
-  ['todos', 'Todos'],
-  ['aromaticas', 'Rosas aromáticas'],
-  ['jabon', 'Rosas de jabón'],
-  ['eternas', 'Rosas eternas'],
-  ['peluche', 'Con peluche'],
-  ['girasoles', 'Girasoles'],
-  ['cajas', 'Cajas corazón'],
-  ['mini', 'Mini ramos'],
-];
 
 const SORTS = {
   destacados: null,
@@ -71,7 +61,7 @@ function renderFilters(active) {
   const count = (k) => (k === 'todos' ? PRODUCTS.length : PRODUCTS.filter((p) => p.tags.includes(k)).length);
   filters.innerHTML = FILTERS
     .filter(([k]) => count(k) > 0) // oculta categorías vacías
-    .map(([k, label]) => `<button class="tab ${k === active ? 'is-active' : ''}" role="tab" aria-selected="${k === active}" data-cat="${k}">${label}<span class="tab__n">${count(k)}</span></button>`)
+    .map(([k, label]) => `<button class="tab ${k === active ? 'is-active' : ''}" role="tab" aria-selected="${k === active}" data-cat="${esc(k)}">${esc(label)}<span class="tab__n">${count(k)}</span></button>`)
     .join('');
 }
 
@@ -269,28 +259,31 @@ $('#contactWaBtn').href = waUrl();
   el.className = 'status ' + (open ? 'is-open' : 'is-closed');
 })();
 
-// ===== CARGA DE PRODUCTOS =====
-const slug = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-  .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-
+// ===== CARGA DEL CATÁLOGO =====
 async function loadProducts() {
   try {
-    const res = await fetch('data/productos.json', { cache: 'no-cache' });
+    const res = await fetch('data/catalogo.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    PRODUCTS = (data.productos || [])
-      .filter((p) => p.visible !== false && p.nombre)
-      .map((p, i) => ({
-        id: `${slug(p.nombre)}-${i}`,
-        name: p.nombre,
-        price: Number(p.precio) || 0,
-        // el CMS guarda "/img/productos/x.jpg"; sin la barra inicial funciona también en GitHub Pages
-        img: (p.foto || 'img/logo.jpg').replace(/^\//, ''),
-        desc: p.descripcion || '',
-        items: Array.isArray(p.incluye) ? p.incluye.filter(Boolean) : [],
-        tags: Array.isArray(p.categorias) ? p.categorias : [],
-        badge: p.etiqueta || '',
-        agotado: !!p.agotado,
-      }));
+    const categorias = Array.isArray(data.categorias) ? data.categorias : [];
+
+    // producto -> categorías a las que pertenece (la categoría es la que dice qué productos tiene)
+    const tagsOf = {};
+    categorias.forEach((c) => (c.productos || []).forEach((id) => (tagsOf[id] = tagsOf[id] || []).push(c.id)));
+
+    FILTERS = [['todos', 'Todos'], ...categorias.map((c) => [c.id, c.nombre])];
+    PRODUCTS = (data.productos || []).map((p) => ({
+      id: p.id,
+      name: p.nombre,
+      price: Number(p.precio) || 0,
+      // el CMS guarda "/img/productos/x.jpg"; sin la barra inicial funciona también en GitHub Pages
+      img: (p.foto || 'img/logo.jpg').replace(/^\//, ''),
+      desc: p.descripcion || '',
+      items: Array.isArray(p.incluye) ? p.incluye : [],
+      tags: tagsOf[p.id] || [],
+      badge: p.etiqueta || '',
+      agotado: !!p.agotado,
+    }));
   } catch (e) {
     console.error(e);
     grid.innerHTML = '<p class="muted">No se pudo cargar el catálogo. Intenta recargar la página.</p>';

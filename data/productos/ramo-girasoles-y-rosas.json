@@ -1,0 +1,18 @@
+{
+  "nombre": "Ramo girasoles y rosas",
+  "precio": 23990,
+  "foto": "/img/productos/girasoles-7.jpg",
+  "descripcion": "",
+  "incluye": [
+    "10 rosas de jabón",
+    "7 girasoles",
+    "Chocolate",
+    "Mariposas",
+    "Globo",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 210
+}

@@ -1,12 +1,15 @@
 # Configuración del panel /admin (Sveltia CMS)
-# Cada cambio que se guarda aquí crea un commit en GitHub y la web se actualiza sola.
+# Cada cambio que se guarda aquí crea un commit en GitHub. GitHub Actions arma
+# data/catalogo.json (scripts/build-catalogo.mjs) y publica la web en ~1 minuto.
 
 backend:
   name: github
   repo: Bemol69/TiendaDeolivia_sorpresas
   branch: main
   commit_messages:
-    update: "Catálogo: actualiza productos"
+    create: "Catálogo: crea {{collection}} «{{slug}}»"
+    update: "Catálogo: actualiza {{collection}} «{{slug}}»"
+    delete: "Catálogo: elimina {{collection}} «{{slug}}»"
     uploadMedia: "Catálogo: sube foto {{path}}"
     deleteMedia: "Catálogo: elimina foto {{path}}"
 
@@ -16,6 +19,12 @@ logo_url: ../img/logo.jpg
 
 media_folder: img/productos
 public_folder: /img/productos
+
+# Nombres de archivo sin tildes ni ñ (ej: "Día del Niño" -> dia-del-nino.json)
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
 
 # Las fotos del celular se achican y convierten a WebP al subirlas, para que la web cargue rápido
 media_libraries:
@@ -29,84 +38,128 @@ media_libraries:
           height: 1200
 
 collections:
-  - name: catalogo
-    label: Catálogo
-    icon: local_florist
-    files:
+  # ---------- CATEGORÍAS (filtros del catálogo) ----------
+  - name: categorias
+    label: Categorías
+    label_singular: categoría
+    description: "Los filtros del catálogo (Rosas de jabón, Día del Niño…). Abre uno para elegir qué productos aparecen en él."
+    icon: filter_list
+    folder: data/categorias
+    format: json
+    create: true
+    delete: true
+    identifier_field: nombre
+    slug: "{{nombre}}"
+    summary: "{{nombre}}"
+    sortable_fields:
+      fields: [orden, nombre]
+      default:
+        field: orden
+        direction: ascending
+    fields:
+      - name: nombre
+        label: Nombre del filtro
+        widget: string
+        hint: "Así aparece en la web. Ej: Día del Niño"
+
       - name: productos
-        label: Productos
-        file: data/productos.json
-        format: json
-        fields:
-          - name: productos
-            label: Productos
-            label_singular: producto
-            widget: list
-            collapsed: true
-            add_to_top: true
-            summary: "{{fields.nombre}} · ${{fields.precio}}"
-            hint: "El orden de esta lista es el orden en que aparecen en la web. Arrastra para reordenar."
-            fields:
-              - name: nombre
-                label: Nombre del ramo
-                widget: string
+        label: Productos en este filtro
+        widget: relation
+        collection: productos
+        value_field: "{{slug}}"
+        search_fields: [nombre]
+        display_fields: ["{{nombre}} · ${{precio}}"]
+        multiple: true
+        required: false
+        hint: "Busca y marca los productos. Un mismo producto puede estar en varios filtros. Para moverlo, quítalo de aquí y agrégalo en el otro."
 
-              - name: precio
-                label: Precio
-                widget: number
-                value_type: int
-                min: 0
-                hint: "Solo números, sin puntos ni signo $. Ej: 25990"
+      - name: orden
+        label: Posición
+        widget: number
+        value_type: int
+        default: 100
+        hint: "Los números más bajos aparecen primero en la barra de filtros."
 
-              - name: foto
-                label: Foto
-                widget: image
-                hint: "Ideal una foto vertical del ramo."
+      - name: visible
+        label: Mostrar en la web
+        widget: boolean
+        default: true
+        hint: "Desactívalo para esconder el filtro sin borrarlo (ej: fuera de temporada)."
 
-              - name: descripcion
-                label: Descripción
-                widget: text
-                required: false
-                hint: "Opcional. Una frase corta que aparece bajo el nombre."
+  # ---------- PRODUCTOS ----------
+  - name: productos
+    label: Productos
+    label_singular: producto
+    description: "Todos los ramos. Para que un ramo aparezca en un filtro, agrégalo desde Categorías."
+    icon: local_florist
+    folder: data/productos
+    format: json
+    create: true
+    delete: true
+    identifier_field: nombre
+    slug: "{{nombre}}"
+    summary: "{{nombre}} · ${{precio}}"
+    thumbnail: foto
+    sortable_fields:
+      fields: [orden, nombre, precio]
+      default:
+        field: orden
+        direction: ascending
+    fields:
+      - name: nombre
+        label: Nombre del ramo
+        widget: string
 
-              - name: incluye
-                label: Qué incluye
-                label_singular: ítem
-                widget: list
-                field:
-                  name: item
-                  label: Ítem
-                  widget: string
-                hint: "Un ítem por línea. Ej: 22 rosas, Chocolates, Mariposas."
+      - name: precio
+        label: Precio
+        widget: number
+        value_type: int
+        min: 0
+        hint: "Solo números, sin puntos ni signo $. Ej: 25990"
 
-              - name: categorias
-                label: Categorías (filtros del catálogo)
-                widget: select
-                multiple: true
-                min: 1
-                options:
-                  - { label: "Rosas aromáticas", value: aromaticas }
-                  - { label: "Rosas de jabón", value: jabon }
-                  - { label: "Rosas eternas", value: eternas }
-                  - { label: "Con peluche", value: peluche }
-                  - { label: "Girasoles", value: girasoles }
-                  - { label: "Cajas corazón", value: cajas }
-                  - { label: "Mini ramos", value: mini }
+      - name: foto
+        label: Foto
+        widget: image
+        hint: "Ideal una foto vertical del ramo."
 
-              - name: etiqueta
-                label: Etiqueta
-                widget: string
-                required: false
-                hint: "Opcional. Aparece sobre la foto. Ej: Nuevo, Más vendido."
+      - name: descripcion
+        label: Descripción
+        widget: text
+        required: false
+        hint: "Opcional. Aparece bajo el nombre."
 
-              - name: agotado
-                label: Agotado
-                widget: boolean
-                default: false
-                hint: "Si está activado, se muestra 'Consultar stock' en vez de 'Hacer pedido'."
+      - name: incluye
+        label: Qué incluye
+        label_singular: ítem
+        widget: list
+        required: false
+        field:
+          name: item
+          label: Ítem
+          widget: string
+        hint: "Un ítem por línea. Ej: 22 rosas, Chocolates, Mariposas."
 
-              - name: visible
-                label: Mostrar en la web
-                widget: boolean
-                default: true
-                hint: "Desactívalo para ocultar el producto sin borrarlo."
+      - name: etiqueta
+        label: Etiqueta
+        widget: string
+        required: false
+        hint: "Opcional. Aparece sobre la foto. Ej: Nuevo, Más vendido."
+
+      - name: orden
+        label: Posición
+        widget: number
+        value_type: int
+        default: 1000
+        hint: "Los números más bajos aparecen primero en el catálogo."
+
+      - name: agotado
+        label: Agotado
+        widget: boolean
+        default: false
+        hint: "Si está activado, se muestra 'Consultar stock' en vez de 'Hacer pedido'."
+
+      - name: visible
+        label: Mostrar en la web
+        widget: boolean
+        default: true
+        hint: "Desactívalo para ocultar el producto sin borrarlo."

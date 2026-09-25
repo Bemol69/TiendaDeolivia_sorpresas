@@ -1,0 +1,17 @@
+{
+  "nombre": "Rosas eternas con osito",
+  "precio": 22990,
+  "foto": "/img/productos/eternas-peluche.jpg",
+  "descripcion": "",
+  "incluye": [
+    "7 rosas eternas",
+    "Tiara",
+    "Osito de peluche 25 cm",
+    "Caja love",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 110
+}

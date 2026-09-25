@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo rosas de jabón + Angela",
+  "precio": 24990,
+  "foto": "/img/productos/angela-25.jpg",
+  "descripcion": "",
+  "incluye": [
+    "10 rosas de jabón",
+    "Peluche Angela 25 cm",
+    "Chocolate",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 160
+}

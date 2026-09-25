@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas eternas Kitty",
+  "precio": 27990,
+  "foto": "/img/productos/eternas-kitty.jpg",
+  "descripcion": "",
+  "incluye": [
+    "7 rosas eternas",
+    "Peluche Hello Kitty 25 cm",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 100
+}

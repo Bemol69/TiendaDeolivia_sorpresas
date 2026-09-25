@@ -1,0 +1,16 @@
+{
+  "nombre": "22 rosas de jabón + Hello Kitty",
+  "precio": 37990,
+  "foto": "/img/productos/jabon-22-kitty.jpg",
+  "descripcion": "",
+  "incluye": [
+    "22 rosas",
+    "Peluche Hello Kitty (o a elección)",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "Premium",
+  "agotado": false,
+  "visible": true,
+  "orden": 90
+}

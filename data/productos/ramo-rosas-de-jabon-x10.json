@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas de jabón x10",
+  "precio": 12990,
+  "foto": "/img/productos/jabon-10.jpg",
+  "descripcion": "",
+  "incluye": [
+    "10 rosas de jabón (colores a elección)",
+    "Mariposas",
+    "Chocolate",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 300
+}

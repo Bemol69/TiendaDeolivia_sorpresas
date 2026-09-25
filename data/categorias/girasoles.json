@@ -1,0 +1,9 @@
+{
+  "nombre": "Girasoles",
+  "orden": 50,
+  "visible": true,
+  "productos": [
+    "ramo-girasoles-y-rosas",
+    "ramo-rosas-con-3-girasoles"
+  ]
+}

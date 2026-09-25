@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo gigante 60 rosas + Stitch",
+  "precio": 62990,
+  "foto": "/img/productos/stitch-60.jpg",
+  "descripcion": "",
+  "incluye": [
+    "60 rosas de jabón",
+    "Peluche Stitch 25 cm",
+    "Mariposas",
+    "Dedicatoria (tarjeta y cinta)"
+  ],
+  "etiqueta": "Gigante",
+  "agotado": false,
+  "visible": true,
+  "orden": 10
+}

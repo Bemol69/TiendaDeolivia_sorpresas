@@ -1,0 +1,18 @@
+{
+  "nombre": "Ramo rosas de jabón mediano",
+  "precio": 18990,
+  "foto": "/img/productos/jabon-13-mediano.jpg",
+  "descripcion": "",
+  "incluye": [
+    "13 rosas",
+    "1 rosa eterna",
+    "4 chocolates en acrílicos",
+    "Mariposas",
+    "Corona",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 260
+}

@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo rosas aromáticas x13",
+  "precio": 18990,
+  "foto": "/img/productos/aromaticas-13.jpg",
+  "descripcion": "",
+  "incluye": [
+    "13 rosas",
+    "Chocolates",
+    "Mariposas",
+    "Corona",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 50
+}

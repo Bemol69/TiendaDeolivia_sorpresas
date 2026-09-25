@@ -1,0 +1,18 @@
+{
+  "nombre": "Ramo futbolero",
+  "precio": 16990,
+  "foto": "/img/productos/futbolero.jpg",
+  "descripcion": "",
+  "incluye": [
+    "10 rosas de jabón",
+    "Chocolate",
+    "Mariposas",
+    "Chuchito y pelotas",
+    "Corona",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "Tu equipo",
+  "agotado": false,
+  "visible": true,
+  "orden": 230
+}

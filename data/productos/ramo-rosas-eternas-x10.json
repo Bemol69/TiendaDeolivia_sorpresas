@@ -1,0 +1,15 @@
+{
+  "nombre": "Ramo rosas eternas x10",
+  "precio": 17990,
+  "foto": "/img/productos/eternas-10.jpg",
+  "descripcion": "",
+  "incluye": [
+    "10 rosas eternas",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 330
+}

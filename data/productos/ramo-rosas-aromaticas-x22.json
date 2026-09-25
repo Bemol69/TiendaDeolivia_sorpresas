@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo rosas aromáticas x22",
+  "precio": 25990,
+  "foto": "/img/productos/aromaticas-22.jpg",
+  "descripcion": "",
+  "incluye": [
+    "22 rosas color a elección",
+    "Chocolates",
+    "Mariposas",
+    "Corona",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "Favorito",
+  "agotado": false,
+  "visible": true,
+  "orden": 40
+}

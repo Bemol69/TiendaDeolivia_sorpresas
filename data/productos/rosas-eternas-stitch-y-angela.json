@@ -1,0 +1,16 @@
+{
+  "nombre": "Rosas eternas + Stitch y Angela",
+  "precio": 17990,
+  "foto": "/img/productos/stitch-llaveros.jpg",
+  "descripcion": "",
+  "incluye": [
+    "5 rosas eternas",
+    "2 peluches llaveros Stitch",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 180
+}

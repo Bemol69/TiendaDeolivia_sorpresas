@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo rosas y peluche Angela",
+  "precio": 25990,
+  "foto": "/img/productos/angela.jpg",
+  "descripcion": "",
+  "incluye": [
+    "Peluche Angela 20 cm",
+    "11 rosas",
+    "Chocolates Valentte",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 80
+}

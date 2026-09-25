@@ -1,0 +1,18 @@
+{
+  "nombre": "Caja corazón capibara",
+  "precio": 17990,
+  "foto": "/img/productos/caja-capibara.jpg",
+  "descripcion": "",
+  "incluye": [
+    "4 rosas eternas",
+    "Caja corazón",
+    "Capibara llavero",
+    "Globo",
+    "3 chocolates en acrílico",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 200
+}

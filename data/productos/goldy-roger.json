@@ -1,0 +1,13 @@
+{
+  "nombre": "Goldy Roger",
+  "precio": 1000000,
+  "foto": "/img/productos/images.webp",
+  "descripcion": "se vender perros xd\n\n1\n12\n123",
+  "incluye": [
+    "un heladios xd"
+  ],
+  "etiqueta": "Boningo",
+  "agotado": false,
+  "visible": true,
+  "orden": 20
+}

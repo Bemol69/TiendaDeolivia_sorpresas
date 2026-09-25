@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo 12 rosas con chocolates",
+  "precio": 18990,
+  "foto": "/img/productos/jabon-12-chocolate.jpg",
+  "descripcion": "",
+  "incluye": [
+    "12 rosas de jabón",
+    "Chocolates",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 270
+}

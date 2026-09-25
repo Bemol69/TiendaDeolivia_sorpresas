@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas eternas x7",
+  "precio": 12990,
+  "foto": "/img/productos/eternas-7.jpg",
+  "descripcion": "",
+  "incluye": [
+    "7 rosas eternas",
+    "Mariposas",
+    "Tiara",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 350
+}

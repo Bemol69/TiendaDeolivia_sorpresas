@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo Hello Kitty",
+  "precio": 18990,
+  "foto": "/img/productos/kitty-angel.jpg",
+  "descripcion": "",
+  "incluye": [
+    "Peluche Hello Kitty",
+    "Rosas",
+    "Mariposas",
+    "Dedicatoria"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 120
+}

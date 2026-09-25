@@ -1,0 +1,15 @@
+{
+  "nombre": "Ramo rosas de jabón x12",
+  "precio": 9990,
+  "foto": "/img/productos/jabon-12.jpg",
+  "descripcion": "",
+  "incluye": [
+    "12 rosas",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "Económico",
+  "agotado": false,
+  "visible": true,
+  "orden": 320
+}

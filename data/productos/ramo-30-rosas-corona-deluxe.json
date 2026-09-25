@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo 30 rosas corona deluxe",
+  "precio": 34990,
+  "foto": "/img/productos/jabon-30.jpg",
+  "descripcion": "",
+  "incluye": [
+    "30 rosas de jabón",
+    "Corona deluxe",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "Graduación",
+  "agotado": false,
+  "visible": true,
+  "orden": 30
+}

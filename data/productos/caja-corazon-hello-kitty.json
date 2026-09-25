@@ -1,0 +1,18 @@
+{
+  "nombre": "Caja corazón Hello Kitty",
+  "precio": 27990,
+  "foto": "/img/productos/caja-kitty.jpg",
+  "descripcion": "",
+  "incluye": [
+    "11 rosas de jabón",
+    "Caja corazón",
+    "Caja de chocolates",
+    "Peluche Kitty 25 cm con tiara",
+    "Globo \"Te amo\"",
+    "Dedicatoria (tarjeta con fotos)"
+  ],
+  "etiqueta": "Te amo",
+  "agotado": false,
+  "visible": true,
+  "orden": 190
+}

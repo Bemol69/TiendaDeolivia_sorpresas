@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas de jabón x22",
+  "precio": 25990,
+  "foto": "/img/productos/jabon-22-rosa.jpg",
+  "descripcion": "",
+  "incluye": [
+    "22 rosas de jabón",
+    "Mariposas",
+    "Corona",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 240
+}

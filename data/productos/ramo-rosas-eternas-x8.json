@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas eternas x8",
+  "precio": 15990,
+  "foto": "/img/productos/eternas-8.jpg",
+  "descripcion": "",
+  "incluye": [
+    "8 rosas eternas",
+    "Mariposas",
+    "Corona",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 340
+}

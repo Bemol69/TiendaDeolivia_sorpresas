@@ -1,0 +1,28 @@
+{
+  "nombre": "Rosas de jabón",
+  "orden": 20,
+  "visible": true,
+  "productos": [
+    "ramo-gigante-60-rosas-stitch",
+    "ramo-30-rosas-corona-deluxe",
+    "22-rosas-de-jabon-hello-kitty",
+    "18-rosas-de-jabon-hello-kitty",
+    "ramo-hello-kitty-con-collar",
+    "22-rosas-de-jabon-minnie",
+    "ramo-rosas-de-jabon-angela",
+    "ramo-peluche-y-dulces",
+    "ramo-girasoles-y-rosas",
+    "ramo-rosas-con-3-girasoles",
+    "ramo-futbolero",
+    "ramo-rosas-de-jabon-x22",
+    "ramo-rosas-de-jabon-x22-rojas",
+    "ramo-rosas-de-jabon-mediano",
+    "ramo-12-rosas-con-chocolates",
+    "ramo-15-rosas-rosa-eterna",
+    "ramo-13-rosas-con-tiara",
+    "ramo-rosas-de-jabon-x10",
+    "ramo-8-rosas-con-chocolates",
+    "ramo-rosas-de-jabon-x12",
+    "mini-ramo-3-rosas"
+  ]
+}

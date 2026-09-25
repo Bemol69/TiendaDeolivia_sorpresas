@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas aromáticas x8",
+  "precio": 12990,
+  "foto": "/img/productos/aromaticas-8.jpg",
+  "descripcion": "",
+  "incluye": [
+    "8 rosas",
+    "Chocolates",
+    "Mariposas",
+    "Dedicatoria"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 60
+}

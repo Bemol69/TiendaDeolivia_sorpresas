@@ -1,0 +1,17 @@
+{
+  "nombre": "Mini ramo Hello Kitty",
+  "precio": 12000,
+  "foto": "/img/productos/mini-kitty.jpg",
+  "descripcion": "",
+  "incluye": [
+    "5 rosas de jabón",
+    "Peluche llavero Hello Kitty",
+    "Mariposa",
+    "Tul perlado",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 370
+}

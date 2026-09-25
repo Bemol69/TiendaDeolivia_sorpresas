@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo 15 rosas + rosa eterna",
+  "precio": 15990,
+  "foto": "/img/productos/jabon-15-eterna.jpg",
+  "descripcion": "",
+  "incluye": [
+    "15 rosas de jabón",
+    "1 rosa eterna",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 280
+}

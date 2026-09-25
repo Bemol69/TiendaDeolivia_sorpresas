@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo 8 rosas con chocolates",
+  "precio": 12990,
+  "foto": "/img/productos/jabon-8-chocolates.jpg",
+  "descripcion": "",
+  "incluye": [
+    "8 rosas de jabón",
+    "3 chocolates en acrílicos",
+    "Mariposas",
+    "Corona",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 310
+}

@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo 13 rosas con tiara",
+  "precio": 14990,
+  "foto": "/img/productos/jabon-13-tiara.jpg",
+  "descripcion": "",
+  "incluye": [
+    "13 rosas de jabón",
+    "Chocolate",
+    "Mariposas",
+    "Tiara",
+    "Dedicatoria (tarjeta y cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 290
+}

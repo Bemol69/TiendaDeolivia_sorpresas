@@ -1,0 +1,9 @@
+{
+  "nombre": "Cajas corazón",
+  "orden": 60,
+  "visible": true,
+  "productos": [
+    "caja-corazon-hello-kitty",
+    "caja-corazon-capibara"
+  ]
+}

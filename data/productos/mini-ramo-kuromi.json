@@ -1,0 +1,18 @@
+{
+  "nombre": "Mini ramo Kuromi",
+  "precio": 13000,
+  "foto": "/img/productos/mini-kuromi.jpg",
+  "descripcion": "",
+  "incluye": [
+    "4 rosas de jabón",
+    "2 chocolates en acrílicos",
+    "Peluche llavero Kuromi",
+    "Mariposa",
+    "Tul perlado",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 360
+}

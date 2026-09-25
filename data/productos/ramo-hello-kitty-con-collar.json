@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo Hello Kitty con collar",
+  "precio": 26990,
+  "foto": "/img/productos/kitty-collar.jpg",
+  "descripcion": "",
+  "incluye": [
+    "8 rosas de jabón",
+    "Peluche Hello Kitty 25 cm",
+    "Collar Hello Kitty",
+    "Mariposas",
+    "Tul perlado"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 140
+}

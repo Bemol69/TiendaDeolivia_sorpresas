@@ -1,0 +1,17 @@
+{
+  "nombre": "Ramo rosas y peluche Stitch",
+  "precio": 24990,
+  "foto": "/img/productos/stitch.jpg",
+  "descripcion": "",
+  "incluye": [
+    "8 rosas aromáticas",
+    "Peluche Stitch 20 cm",
+    "Chocolates Valentte o Bon o Bon",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "Rosado o azul",
+  "agotado": false,
+  "visible": true,
+  "orden": 70
+}

@@ -1,0 +1,17 @@
+{
+  "nombre": "18 rosas de jabón + Hello Kitty",
+  "precio": 31990,
+  "foto": "/img/productos/kitty-18.jpg",
+  "descripcion": "",
+  "incluye": [
+    "18 rosas de jabón",
+    "1 rosa eterna",
+    "Peluche Hello Kitty 25 cm",
+    "Mariposas",
+    "Dedicatoria (tarjeta o cinta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 130
+}

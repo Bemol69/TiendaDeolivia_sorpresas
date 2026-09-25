@@ -1,0 +1,16 @@
+{
+  "nombre": "Mini ramo 3 rosas",
+  "precio": 4990,
+  "foto": "/img/productos/mini-3.jpg",
+  "descripcion": "",
+  "incluye": [
+    "3 rosas de jabón",
+    "2 chocolates",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "Desde $4.990",
+  "agotado": false,
+  "visible": true,
+  "orden": 380
+}

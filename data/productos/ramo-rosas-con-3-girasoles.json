@@ -1,0 +1,16 @@
+{
+  "nombre": "Ramo rosas con 3 girasoles",
+  "precio": 16990,
+  "foto": "/img/productos/girasoles-3.jpg",
+  "descripcion": "",
+  "incluye": [
+    "15 rosas de jabón",
+    "3 girasoles",
+    "Mariposas",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 220
+}

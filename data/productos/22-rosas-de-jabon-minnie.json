@@ -1,0 +1,19 @@
+{
+  "nombre": "22 rosas de jabón + Minnie",
+  "precio": 30990,
+  "foto": "/img/productos/minnie.jpg",
+  "descripcion": "",
+  "incluye": [
+    "22 rosas de jabón",
+    "Peluche Minnie",
+    "Chocolate",
+    "Mariposas",
+    "Corona",
+    "Globo",
+    "Dedicatoria (tarjeta)"
+  ],
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 150
+}
