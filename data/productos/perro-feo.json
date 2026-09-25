@@ -1,0 +1,14 @@
+{
+  "nombre": "PERRO FEO",
+  "precio": 1,
+  "foto": "/img/productos/download.webp",
+  "descripcion": "PEERO FEO LO VENDO A 1 PESO PERO IGUAL SE PUEDO DEJAR GRATIS",
+  "incluye": [
+    "hueso",
+    "comida infinita para que se lo lleven luego"
+  ],
+  "etiqueta": "EL menos vendido",
+  "orden": 3,
+  "agotado": false,
+  "visible": true
+}
